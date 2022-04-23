@@ -1,0 +1,246 @@
+
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap/scss/_modal.scss';
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+  }
+  .checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+  }
+  .checkbox input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
+  }
+  .checkbox input[type="checkbox"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  .checkbox input[type="checkbox"]:checked + label::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+  }
+  
+  .checkbox.checkbox-inline {
+    margin-top: 0;
+  }
+  .checkbox-blue ::before {
+    background-color: #337ab7;
+    border-color: #337ab7;
+  }
+  .checkbox-blue input[type="checkbox"]:checked + label::before {
+    background-color: #337ab7;
+    border-color: #337ab7;
+  }
+  .checkbox-blue input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+  
+  .checkbox-yellow ::before {
+    background-color: #EACD29;
+    border-color: #EACD29;
+  }
+  .checkbox-yellow input[type="checkbox"]:checked + label::before {
+    background-color: #EACD29;
+    border-color: #EACD29;
+  }
+  .checkbox-yellow input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-red ::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+  }
+  .checkbox-red input[type="checkbox"]:checked + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+  }
+  .checkbox-red input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-brown ::before {
+    background-color: #644830;
+    border-color: #644830;
+  }
+  .checkbox-brown input[type="checkbox"]:checked + label::before {
+    background-color: #644830;
+    border-color: #644830;
+  }
+  .checkbox-brown input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-gray ::before {
+    background-color: #939393;
+    border-color: #939393;
+  }
+  .checkbox-gray input[type="checkbox"]:checked + label::before {
+    background-color: #939393;
+    border-color: #939393;
+  }
+  .checkbox-gray input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-green ::before {
+    background-color: #2D752F;
+    border-color: #2D752F;
+  }
+  .checkbox-green input[type="checkbox"]:checked + label::before {
+    background-color: #2D752F;
+    border-color: #2D752F;
+  }
+  .checkbox-green input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-purple ::before {
+    background-color: #8D46CB;
+    border-color: #8D46CB;
+  }
+  .checkbox-purple input[type="checkbox"]:checked + label::before {
+    background-color: #8D46CB;
+    border-color: #8D46CB;
+  }
+  .checkbox-purple input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-white ::before {
+    background-color: #F9F4F9;
+    border-color: #F9F4F9;
+  }
+  .checkbox-white input[type="checkbox"]:checked + label::before {
+    background-color: #F9F4F9;
+    border-color: #F9F4F9;
+  }
+  .checkbox-white input[type="checkbox"]:checked + label::after {
+    color: #000000;
+  }
+
+  .checkbox-pink ::before {
+    background-color: #DE43D9;
+    border-color: #DE43D9;
+  }
+  .checkbox-pink input[type="checkbox"]:checked + label::before {
+    background-color: #DE43D9;
+    border-color: #DE43D9;
+  }
+  .checkbox-pink input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+
+  .checkbox-black ::before {
+    background-color: #000000;
+    border-color: #000000;
+  }
+  .checkbox-black input[type="checkbox"]:checked + label::before {
+    background-color: #000000;
+    border-color: #000000;
+  }
+  .checkbox-black input[type="checkbox"]:checked + label::after {
+    color: rgb(255, 255, 255);
+  }
+  .showModalVue {
+    display: inline !important;
+}
+
+.modal {
+  -webkit-transition: opacity 400ms ease-in !important;
+  -moz-transition: opacity 400ms ease-in !important;
+  transition: opacity 400ms ease-in !important;
+  pointer-events: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .checkbox-danger input[type="checkbox"]:checked + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+  }
+  .checkbox-danger input[type="checkbox"]:checked + label::after {
+    color: #fff;
+  }
+  
+  .checkbox-info input[type="checkbox"]:checked + label::before{
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+  }
+  .checkbox-info input[type="checkbox"]:checked + label::after {
+    color: #fff;
+  }
+  
+  .checkbox-warning input[type="checkbox"]:checked + label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+  .checkbox-warning input[type="checkbox"]:checked + label::after {
+    color: #fff;
+  }
+  
+  .checkbox-success input[type="checkbox"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+  }
+  .checkbox-success input[type="checkbox"]:checked + label::after {
+    color: #fff;
+  }
+  
+  .checkbox.checkbox-sm label::before {
+    width: 30px;
+    height: 30px;
+    top: -45px;
+  }
+  .checkbox.checkbox-sm label::after {
+    width: 30px;
+    height: 30px;
+    padding-left: 4px;
+    font-size: 20px;
+    left: 1px;
+    top: -45px;
+  }
+  .checkbox.checkbox-sm label {
+    padding-left: 18px;
+    top: 9px;
+  }
+  

@@ -1,4 +1,10 @@
 # pokemon_api_test
+---
+# Pokemons - api - Development
+
+Aplicación desarrollada en vue, utilizando vuex.
+Esta SPA conecta con la api "https://pokeapi.co/" utilizando diferentes endpoint
+Principalmente la aplicacion logra cargar mas de 800 pokemons, los logra visualizar en pantalla, además cuenta con filtros sumables, ademas de un filtro de busqueda por nombre y ID. 
 
 ## Project setup
 ```
@@ -15,5 +21,6 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Autor ✒️
+
+* **Johan Sebastian Hidalgo** -  - [SebastianHidalgo95](https://github.com/SebastianHidalgo95)
